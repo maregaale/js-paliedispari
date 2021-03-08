@@ -31,6 +31,8 @@ var evenOddValues = document.getElementsByClassName('even-odd-values');
 var numberUser = document.getElementById('number');
 var btn = document.getElementById('btn');
 var numberComputer = randomGenerator(1, 5);
+// var result = document.getElementsById('result');
+
 
 // funzione per generare numero random da x a y
 function randomGenerator(x, y) {
@@ -63,9 +65,9 @@ btn.addEventListener("click",
 
       // stampo risultato se la somma e il numero random sono entrambi pari o dispari
       if (sumIsEvenOrOdd(numberComputer, parseInt(numberUser.value)) == val) {
-        console.log("hai vinto tu");
+        document.getElementById('result').innerHTML = "il numero del computer è " + numberComputer + ", hai vinto!!";
       } else {
-        console.log("hai perso");
+        document.getElementById('result').innerHTML = "il numero del computer è " + numberComputer + ", hai perso";
       }
 
     } else {
