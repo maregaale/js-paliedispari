@@ -28,7 +28,9 @@
 // esercizio numero 2: Pari e dispari
 // variabili
 var evenOddValues = document.getElementsByClassName('even-odd-values');
-var number = document.getElementById('number');
+var numberUser = document.getElementById('number');
+var btn = document.getElementById('btn');
+var numberComputer = randomGenerator(1, 5);
 
 // funzione per generare numero random da x a y
 function randomGenerator(x, y) {
@@ -39,6 +41,35 @@ function randomGenerator(x, y) {
 function sumIsEvenOrOdd(a, b) {
   if ((a + b) % 2 == 0) {
     return "pari";
+  } else {
+    return "dispari";
   }
-  return "dispari";
 }
+
+// genero l'evento al click sul bottone
+btn.addEventListener("click",
+  function () {
+    // controllo che venga inserito un numero
+    if (numberUser.value != "") {
+      // controllo i valori checkati
+      var val = "";
+
+      // controllo se è stato scelto pari o dispari
+      if (evenOddValues[0].checked) {
+          val = evenOddValues[0].value;
+      } else {
+        val = evenOddValues[1].value;
+      }
+
+      // stampo risultato se la somma e il numero random sono entrambi pari o dispari
+      if (sumIsEvenOrOdd(numberComputer, parseInt(numberUser.value)) == val) {
+        console.log("hai vinto tu");
+      } else {
+        console.log("hai perso");
+      }
+
+    } else {
+      alert("inserisci un numero da 1 a 5");
+    }
+  }
+);
