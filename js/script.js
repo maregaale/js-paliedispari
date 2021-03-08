@@ -17,4 +17,9 @@ function wordReverse(word) {
   return reverseWord;
 }
 
-console.log(wordReverse(parolaUtente));
+// uso la funzione e controllo se parola inserita è Palindroma
+if (parolaUtente == wordReverse(parolaUtente)) {
+  console.log("la parola è palindroma");
+} else {
+  console.log("la parola non è palindroma");
+}
