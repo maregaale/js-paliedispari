@@ -32,8 +32,8 @@ function () {
 );
 
 
-
 // esercizio numero 2: Pari e dispari
+
 // variabili
 var evenOddValues = document.getElementsByClassName('even-odd-values');
 var numberUser = document.getElementById('number');
@@ -69,7 +69,7 @@ btn.addEventListener("click",
         val = evenOddValues[1].value;
       }
 
-      // stampo risultato se la somma e il numero random sono entrambi pari o dispari
+      // stampo risultato
       if (sumIsEvenOrOdd(numberComputer, parseInt(numberUser.value)) == val) {
         document.getElementById('second-result').innerHTML = "il numero del computer è " + numberComputer + ", hai vinto!!";
       } else {
