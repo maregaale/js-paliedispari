@@ -35,4 +35,10 @@ function randomGenerator(x, y) {
   return Math.floor(Math.random() * (y - x + 1) ) + x;
 }
 
-console.log(randomGenerator(1, 5));
+// funzione per stabilire se la somma di due numeri è pari o dispari
+function sumIsEvenOrOdd(a, b) {
+  if ((a + b) % 2 == 0) {
+    return "pari";
+  }
+  return "dispari";
+}
