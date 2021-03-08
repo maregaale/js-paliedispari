@@ -9,31 +9,49 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <!-- esercizio numero 1 -->
+    <h2>Gioco numero uno: parole palindrome</h2>
 
-
-  <!-- esercizio numero 2 -->
-  <form class="" action="index.html" method="post">
-    <label for="even-input"> Pari
-      <input  id="even-input" class="even-odd-values" type="radio" name="even-odd" value="pari" >
+    <label for="word-input"> Parola
+      <input id="word-input" type="text" placeholder="inerisci una parola">
     </label>
-    <label for="odd-input"> Dispari
-      <input id="odd-input" class="even-odd-values" type="radio" name="even-odd" value="dispari">
-    </label>
-    <div class="">
-      <label for="number"> Numero
-        <input id="number" type="text" placeholder="Inserisci un numero da 1 a 5">
-      </label>
-    </div>
 
-    <button id="btn" type="button" name="button">
-      clicca
+
+    <button id="button" type="button" name="button">
+      vai
     </button>
-  </form>
 
-  <p id="result"></p>
-  <!-- /esercizio numero 2 -->
+    <p id="first-result"></p>
+
+    <!-- esercizio numero 1 -->
 
 
+
+
+    <!-- esercizio numero 2 -->
+    <h2>Gioco numero due: pari e dispari</h2>
+    <form class="" action="index.html" method="post">
+      <label for="even-input"> Pari
+        <input  id="even-input" class="even-odd-values" type="radio" name="even-odd" value="pari" >
+      </label>
+      <label for="odd-input"> Dispari
+        <input id="odd-input" class="even-odd-values" type="radio" name="even-odd" value="dispari">
+      </label>
+      <div class="">
+        <label for="number"> Numero
+          <input id="number" type="text" placeholder="Inserisci un numero da 1 a 5">
+        </label>
+      </div>
+
+      <button id="btn" type="button" name="button">
+        clicca
+      </button>
+    </form>
+
+    <p id="second-result"></p>
+    <!-- /esercizio numero 2 -->
+
+  <!-- script js -->
   <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
