@@ -23,3 +23,6 @@ if (parolaUtente == wordReverse(parolaUtente)) {
 } else {
   console.log("la parola non è palindroma");
 }
+
+
+// esercizio numero 2: Pari e dispari
