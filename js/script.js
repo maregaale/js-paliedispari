@@ -58,7 +58,7 @@ function sumIsEvenOrOdd(a, b) {
 btn.addEventListener("click",
   function () {
     // controllo che venga inserito un numero
-    if (numberUser.value != "") {
+    if (numberUser.value != "" && !(isNaN(numberUser.value))) {
       // controllo i valori checkati
       var val = "";
 
